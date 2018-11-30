@@ -184,16 +184,18 @@
                 <i class="fa fa-envelope w3-hover-text-black" style="width:30px"> </i> Email: ryandupay@gmail.com<br>
             </div>
             <p>Let's have coffee or pizza? or leave me a note:</p>
-            <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-                <div class="w3-half">
-                    <input class="w3-input w3-border w3-hover-light-grey" type="text" placeholder="Name">
+            <form action="email.php" method="POST">
+                <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+                    <div class="w3-half">
+                        <input class="w3-input w3-border w3-hover-light-grey" type="text" name="name" placeholder="Name" required>
+                    </div>
+                    <div class="w3-half">
+                        <input class="w3-input w3-border w3-hover-light-grey" type="email" name="email" placeholder="Email" required>
+                    </div>
                 </div>
-                <div class="w3-half">
-                    <input class="w3-input w3-border w3-hover-light-grey" type="text" placeholder="Email">
-                </div>
-            </div>
-            <input class="w3-input w3-border w3-hover-light-grey" type="text" placeholder="Comment">
-            <a href="mailto:ryandupay@gmail.com" class="w3-btn w3-section w3-right">SEND</a>
+                <input class="w3-input w3-border w3-hover-light-grey" type="text" name="comment" placeholder="Comment" required>
+                <input type="submit" class="w3-btn w3-section w3-right" name="sendbutton" value="SEND">
+            </form>
         </div>
     </address>
 </div>
